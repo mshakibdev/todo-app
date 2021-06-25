@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,800;1,100;1,200;1,300&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="./style.css" />
+		<title>Todo List</title>
+	</head>
+	<body>
+		<header>
+			<h1>TODO List</h1>
+		</header>
+		<form>
+			<input type="text" class="td-input" />
+			<button type="submit" class="td-btn">
+				<i class="fas fa-plus-square"></i>
+			</button>
+			<div class="select">
+				<select
+					name="todo-select"
+					id="filter-todo"
+					class="filter-todo"
+				>
+					<option value="all">
+						ALL
+					</option>
+					<option value="completed">
+						COMPLETED
+					</option>
+					<option value="uncompleted">
+						UNCOMPLETED
+					</option>
+				</select>
+			</div>
+		</form>
+		<div class="td-container">
+			<ul class="td-list"></ul>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
